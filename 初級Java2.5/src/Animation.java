@@ -13,6 +13,14 @@ public class Animation extends MyFrame {
 				sleep(0.1);
 			}
 
+			for (int i = 1; i <= 20; i++) {
+				clear();
+				setColor(0, 128, 0);
+				fillRect(x, y, 10, 100);
+				y += 5;
+				sleep(0.1);
+			}
+
 			while (x >= 30) {
 				clear();
 				setColor(0, 128, 0);
@@ -20,7 +28,14 @@ public class Animation extends MyFrame {
 				x -= 5;
 				sleep(0.1);
 			}
-		}
 
+			for (int i = 1; i <= 20; i++) {
+				clear();
+				setColor(0, 128, 0);
+				fillRect(x, y, 10, 100);
+				y += 5;
+				sleep(0.1);
+			}
+		}
 	}
 }
