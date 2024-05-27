@@ -3,37 +3,24 @@ public class Animation extends MyFrame {
 	public void run() {
 		int x = 30;
 		int y = 100;
-
+		double sin = 0;
+		
 		while (true) {
-			while (x <= 170) {
+			while (x <= 210) {
 				clear();
 				setColor(0, 128, 0);
-				fillRect(x, y, 10, 100);
+				fillRect(x, 100 + Math.sin(sin) * 40, 10, 100);
 				x += 5;
+				sin += 0.1;
 				sleep(0.1);
 			}
-
-			for (int i = 1; i <= 20; i++) {
-				clear();
-				setColor(0, 128, 0);
-				fillRect(x, y, 10, 100);
-				y += 5;
-				sleep(0.1);
-			}
-
+			
 			while (x >= 30) {
 				clear();
 				setColor(0, 128, 0);
-				fillRect(x, y, 10, 100);
+				fillRect(x, 100 + Math.sin(sin) * 40, 10, 100);
 				x -= 5;
-				sleep(0.1);
-			}
-
-			for (int i = 1; i <= 20; i++) {
-				clear();
-				setColor(0, 128, 0);
-				fillRect(x, y, 10, 100);
-				y += 5;
+				sin -= 0.1;
 				sleep(0.1);
 			}
 		}
