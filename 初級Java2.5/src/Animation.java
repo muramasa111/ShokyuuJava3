@@ -19,7 +19,10 @@ public class Animation extends MyFrame {
 				fillRect(x, y, 10, 100);
 				x -= 5;
 				sleep(0.1);
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of 04da0b8 (練習問題5-ex1)
 			}
 		}
 
